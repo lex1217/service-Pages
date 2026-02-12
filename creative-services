@@ -1,0 +1,201 @@
+<meta>
+ 
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+ <title>
+  How to Get Started Steps
+ </title>
+ <style>
+  * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .process-section {
+            padding: 60px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .process-title {
+            text-align: center;
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 60px;
+            color: #1a1a1a;
+        }
+        .steps-container {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            gap: 0;
+            padding: 40px 0;
+        }
+        /* The connecting line - vertical on left side */
+        .steps-container::before {
+            content: '';
+            position: absolute;
+            top: 50px;
+            bottom: 50px;
+            left: 35px;
+            width: 2px;
+            background: #e0e0e0;
+            z-index: 1;
+        }
+        .step {
+            position: relative;
+            display: grid;
+            grid-template-columns: 150px 1fr;
+            gap: 30px;
+            align-items: start;
+            padding: 30px 0;
+            border-bottom: 1px solid #f0f0f0;
+            z-index: 2;
+        }
+        .step:last-child {
+            border-bottom: none;
+        }
+        .step-number-wrapper {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
+        /* The dot/circle */
+        .step-number {
+            width: 70px;
+            height: 70px;
+            background: #0074bc;
+            border: 3px solid #0074bc;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 1.5rem;
+            color: #ffffff;
+            position: relative;
+            z-index: 3;
+            flex-shrink: 0;
+        }
+        .step-content {
+            padding-top: 8px;
+        }
+        .step-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 15px;
+            color: #1a1a1a;
+            text-align: left;
+        }
+        .step-description {
+            font-size: 1rem;
+            line-height: 1.7;
+            color: #666;
+            text-align: left;
+        }
+        /* Mobile responsive */
+        @media (max-width: 768px) {
+            .process-title {
+                font-size: 1.8rem;
+                margin-bottom: 40px;
+            }
+            .step {
+                grid-template-columns: 80px 1fr;
+                gap: 20px;
+                padding: 25px 0;
+            }
+            .step-number {
+                width: 50px;
+                height: 50px;
+                font-size: 1.2rem;
+            }
+            .steps-container::before {
+                left: 25px;
+            }
+            .step-title {
+                font-size: 1.2rem;
+            }
+            .step-description {
+                font-size: 0.9rem;
+            }
+        }
+ </style>
+ <div class="process-section">
+  <h2 class="process-title">
+   How To Get Started
+  </h2>
+  <div class="steps-container">
+   <div class="step">
+    <div class="step-number-wrapper">
+     <div class="step-number">
+      1
+     </div>
+    </div>
+    <div class="step-content">
+     <h3 class="step-title">
+      Contact Us
+     </h3>
+     <p class="step-description">
+      Fill our our contact form or give us a call.
+     </p>
+    </div>
+   </div>
+   <div class="step">
+    <div class="step-number-wrapper">
+     <div class="step-number">
+      2
+     </div>
+    </div>
+    <div class="step-content">
+     <h3 class="step-title">
+      Schedule a Meeting
+     </h3>
+     <p class="step-description">
+      We'll set up a quick intro meeting to learn more about your business needs.
+     </p>
+    </div>
+   </div>
+   <div class="step">
+    <div class="step-number-wrapper">
+     <div class="step-number">
+      3
+     </div>
+    </div>
+    <div class="step-content">
+     <h3 class="step-title">
+      Receive a Personalized Plan
+     </h3>
+     <p class="step-description">
+      We will dive deeper into your needs and you will receive a custom proposal tailored to your needs, budget, and target audience.
+     </p>
+    </div>
+   </div>
+   <div class="step">
+    <div class="step-number-wrapper">
+     <div class="step-number">
+      4
+     </div>
+    </div>
+    <div class="step-content">
+     <h3 class="step-title">
+      Design &amp; Feedback
+     </h3>
+     <p class="step-description">
+      Our creative team will work on any ads you need and keep you in the loop with rounds of feedback and updates throughout your campaign.
+     </p>
+    </div>
+   </div>
+   <div class="step">
+    <div class="step-number-wrapper">
+     <div class="step-number">
+      5
+     </div>
+    </div>
+    <div class="step-content">
+     <h3 class="step-title">
+      Final Delivery
+     </h3>
+     <p class="step-description">
+      Once approved, we will send your designs in all the formats and files you will need to launch, print, or share.
+     </p>
+    </div>
+   </div>
